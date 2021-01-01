@@ -1,0 +1,151 @@
+1,login,25,Generic suspicious,Nuwan Athukorala,0000-00-00,0000-00-00 00:00:00,0000-00-00 00:00:00
+2,login-in,25,Generic suspicious,Nuwan Athukorala,0000-00-01,0000-00-00 00:00:01,0000-00-00 00:00:01
+3,sign-in,25,Generic suspicious,Nuwan Athukorala,0000-00-02,0000-00-00 00:00:02,0000-00-00 00:00:02
+4,signin,25,Generic suspicious,Nuwan Athukorala,0000-00-03,0000-00-00 00:00:03,0000-00-00 00:00:03
+5,account,25,Generic suspicious,Nuwan Athukorala,0000-00-04,0000-00-00 00:00:04,0000-00-00 00:00:04
+6,verification,25,Generic suspicious,Nuwan Athukorala,0000-00-05,0000-00-00 00:00:05,0000-00-00 00:00:05
+7,verify,25,Generic suspicious,Nuwan Athukorala,0000-00-06,0000-00-00 00:00:06,0000-00-00 00:00:06
+8,webscr,25,Generic suspicious,Nuwan Athukorala,0000-00-07,0000-00-00 00:00:07,0000-00-00 00:00:07
+9,password,25,Generic suspicious,Nuwan Athukorala,0000-00-08,0000-00-00 00:00:08,0000-00-00 00:00:08
+10,credential,25,Generic suspicious,Nuwan Athukorala,0000-00-09,0000-00-00 00:00:09,0000-00-00 00:00:09
+11,support,25,Generic suspicious,Nuwan Athukorala,0000-00-10,0000-00-00 00:00:10,0000-00-00 00:00:10
+12,activity,25,Generic suspicious,Nuwan Athukorala,0000-00-11,0000-00-00 00:00:11,0000-00-00 00:00:11
+13,security,25,Generic suspicious,Nuwan Athukorala,0000-00-12,0000-00-00 00:00:12,0000-00-00 00:00:12
+14,update,25,Generic suspicious,Nuwan Athukorala,0000-00-13,0000-00-00 00:00:13,0000-00-00 00:00:13
+15,authentication,25,Generic suspicious,Nuwan Athukorala,0000-00-14,0000-00-00 00:00:14,0000-00-00 00:00:14
+16,authenticate,25,Generic suspicious,Nuwan Athukorala,0000-00-15,0000-00-00 00:00:15,0000-00-00 00:00:15
+17,authorize,25,Generic suspicious,Nuwan Athukorala,0000-00-16,0000-00-00 00:00:16,0000-00-00 00:00:16
+18,wallet,25,Generic suspicious,Nuwan Athukorala,0000-00-17,0000-00-00 00:00:17,0000-00-00 00:00:17
+19,alert,25,Generic suspicious,Nuwan Athukorala,0000-00-18,0000-00-00 00:00:18,0000-00-00 00:00:18
+20,purchase,25,Generic suspicious,Nuwan Athukorala,0000-00-19,0000-00-00 00:00:19,0000-00-00 00:00:19
+21,transaction,25,Generic suspicious,Nuwan Athukorala,0000-00-20,0000-00-00 00:00:20,0000-00-00 00:00:20
+22,recover,25,Generic suspicious,Nuwan Athukorala,0000-00-21,0000-00-00 00:00:21,0000-00-00 00:00:21
+23,unlock,25,Generic suspicious,Nuwan Athukorala,0000-00-22,0000-00-00 00:00:22,0000-00-00 00:00:22
+24,confirm,20,Generic suspicious,Nuwan Athukorala,0000-00-23,0000-00-00 00:00:23,0000-00-00 00:00:23
+25,live,15,Generic suspicious,Nuwan Athukorala,0000-00-24,0000-00-00 00:00:24,0000-00-00 00:00:24
+26,office,15,Generic suspicious,Nuwan Athukorala,0000-00-25,0000-00-00 00:00:25,0000-00-00 00:00:25
+27,service,15,Generic suspicious,Nuwan Athukorala,0000-00-26,0000-00-00 00:00:26,0000-00-00 00:00:26
+28,manage,15,Generic suspicious,Nuwan Athukorala,0000-00-27,0000-00-00 00:00:27,0000-00-00 00:00:27
+29,portal,15,Generic suspicious,Nuwan Athukorala,0000-00-28,0000-00-00 00:00:28,0000-00-00 00:00:28
+30,invoice,15,Generic suspicious,Nuwan Athukorala,0000-00-29,0000-00-00 00:00:29,0000-00-00 00:00:29
+31,secure,10,Generic suspicious,Nuwan Athukorala,0000-00-30,0000-00-00 00:00:30,0000-00-00 00:00:30
+32,customer,10,Generic suspicious,Nuwan Athukorala,0000-00-31,0000-00-00 00:00:31,0000-00-00 00:00:31
+33,client,10,Generic suspicious,Nuwan Athukorala,0000-00-32,0000-00-00 00:00:32,0000-00-00 00:00:32
+34,bill,10,Generic suspicious,Nuwan Athukorala,0000-00-33,0000-00-00 00:00:33,0000-00-00 00:00:33
+35,online,10,Generic suspicious,Nuwan Athukorala,0000-00-34,0000-00-00 00:00:34,0000-00-00 00:00:34
+36,safe,10,Generic suspicious,Nuwan Athukorala,0000-00-35,0000-00-00 00:00:35,0000-00-00 00:00:35
+37,form,10,Generic suspicious,Nuwan Athukorala,0000-00-36,0000-00-00 00:00:36,0000-00-00 00:00:36
+38,appleid,70,Apple iCloud,Nuwan Athukorala,0000-00-37,0000-00-00 00:00:37,0000-00-00 00:00:37
+39,icloud,60,Apple iCloud,Nuwan Athukorala,0000-00-38,0000-00-00 00:00:38,0000-00-00 00:00:38
+40,iforgot,60,Apple iCloud,Nuwan Athukorala,0000-00-39,0000-00-00 00:00:39,0000-00-00 00:00:39
+41,itunes,50,Apple iCloud,Nuwan Athukorala,0000-00-40,0000-00-00 00:00:40,0000-00-00 00:00:40
+42,apple,30,Apple iCloud,Nuwan Athukorala,0000-00-41,0000-00-00 00:00:41,0000-00-00 00:00:41
+43,office365,50,Email,Nuwan Athukorala,0000-00-42,0000-00-00 00:00:42,0000-00-00 00:00:42
+44,microsoft,60,Email,Nuwan Athukorala,0000-00-43,0000-00-00 00:00:43,0000-00-00 00:00:43
+45,windows,30,Email,Nuwan Athukorala,0000-00-44,0000-00-00 00:00:44,0000-00-00 00:00:44
+46,protonmail,70,Email,Nuwan Athukorala,0000-00-45,0000-00-00 00:00:45,0000-00-00 00:00:45
+47,tutanota,60,Email,Nuwan Athukorala,0000-00-46,0000-00-00 00:00:46,0000-00-00 00:00:46
+48,hotmail,60,Email,Nuwan Athukorala,0000-00-47,0000-00-00 00:00:47,0000-00-00 00:00:47
+49,gmail,70,Email,Nuwan Athukorala,0000-00-48,0000-00-00 00:00:48,0000-00-00 00:00:48
+50,outlook,60,Email,Nuwan Athukorala,0000-00-49,0000-00-00 00:00:49,0000-00-00 00:00:49
+51,yahoo,60,Email,Nuwan Athukorala,0000-00-50,0000-00-00 00:00:50,0000-00-00 00:00:50
+52,google,60,Email,Nuwan Athukorala,0000-00-51,0000-00-00 00:00:51,0000-00-00 00:00:51
+53,yandex,60,Email,Nuwan Athukorala,0000-00-52,0000-00-00 00:00:52,0000-00-00 00:00:52
+54,twitter,60,Social Media,Nuwan Athukorala,0000-00-53,0000-00-00 00:00:53,0000-00-00 00:00:53
+55,facebook,60,Social Media,Nuwan Athukorala,0000-00-54,0000-00-00 00:00:54,0000-00-00 00:00:54
+56,tumblr,60,Social Media,Nuwan Athukorala,0000-00-55,0000-00-00 00:00:55,0000-00-00 00:00:55
+57,reddit,60,Social Media,Nuwan Athukorala,0000-00-56,0000-00-00 00:00:56,0000-00-00 00:00:56
+58,youtube,40,Social Media,Nuwan Athukorala,0000-00-57,0000-00-00 00:00:57,0000-00-00 00:00:57
+59,linkedin,60,Social Media,Nuwan Athukorala,0000-00-58,0000-00-00 00:00:58,0000-00-00 00:00:58
+60,instagram,60,Social Media,Nuwan Athukorala,0000-00-59,0000-00-00 00:00:59,0000-00-00 00:00:59
+61,flickr,60,Social Media,Nuwan Athukorala,0000-00-60,0000-00-00 00:00:60,0000-00-00 00:00:60
+62,whatsapp,60,Social Media,Nuwan Athukorala,0000-00-61,0000-00-00 00:00:61,0000-00-00 00:00:61
+63,localbitcoin,70,Cryptocurrency,Nuwan Athukorala,0000-00-62,0000-00-00 00:00:62,0000-00-00 00:00:62
+64,poloniex,60,Cryptocurrency,Nuwan Athukorala,0000-00-63,0000-00-00 00:00:63,0000-00-00 00:00:63
+65,coinhive,70,Cryptocurrency,Nuwan Athukorala,0000-00-64,0000-00-00 00:00:64,0000-00-00 00:00:64
+66,bithumb,60,Cryptocurrency,Nuwan Athukorala,0000-00-65,0000-00-00 00:00:65,0000-00-00 00:00:65
+67,kraken,50,Cryptocurrency,Nuwan Athukorala,0000-00-66,0000-00-00 00:00:66,0000-00-00 00:00:66
+68,bitstamp,60,Cryptocurrency,Nuwan Athukorala,0000-00-67,0000-00-00 00:00:67,0000-00-00 00:00:67
+69,bittrex,60,Cryptocurrency,Nuwan Athukorala,0000-00-68,0000-00-00 00:00:68,0000-00-00 00:00:68
+70,blockchain,70,Cryptocurrency,Nuwan Athukorala,0000-00-69,0000-00-00 00:00:69,0000-00-00 00:00:69
+71,bitflyer,60,Cryptocurrency,Nuwan Athukorala,0000-00-70,0000-00-00 00:00:70,0000-00-00 00:00:70
+72,coinbase,60,Cryptocurrency,Nuwan Athukorala,0000-00-71,0000-00-00 00:00:71,0000-00-00 00:00:71
+73,hitbtc,60,Cryptocurrency,Nuwan Athukorala,0000-00-72,0000-00-00 00:00:72,0000-00-00 00:00:72
+74,lakebtc,60,Cryptocurrency,Nuwan Athukorala,0000-00-73,0000-00-00 00:00:73,0000-00-00 00:00:73
+75,bitfinex,60,Cryptocurrency,Nuwan Athukorala,0000-00-74,0000-00-00 00:00:74,0000-00-00 00:00:74
+76,bitconnect,60,Cryptocurrency,Nuwan Athukorala,0000-00-75,0000-00-00 00:00:75,0000-00-00 00:00:75
+77,coinsbank,60,Cryptocurrency,Nuwan Athukorala,0000-00-76,0000-00-00 00:00:76,0000-00-00 00:00:76
+78,paypal,70,Bank/money,Nuwan Athukorala,0000-00-77,0000-00-00 00:00:77,0000-00-00 00:00:77
+79,moneygram,60,Bank/money,Nuwan Athukorala,0000-00-78,0000-00-00 00:00:78,0000-00-00 00:00:78
+80,westernunion,60,Bank/money,Nuwan Athukorala,0000-00-79,0000-00-00 00:00:79,0000-00-00 00:00:79
+81,bankofamerica,60,Bank/money,Nuwan Athukorala,0000-00-80,0000-00-00 00:00:80,0000-00-00 00:00:80
+82,wellsfargo,60,Bank/money,Nuwan Athukorala,0000-00-81,0000-00-00 00:00:81,0000-00-00 00:00:81
+83,citigroup,60,Bank/money,Nuwan Athukorala,0000-00-82,0000-00-00 00:00:82,0000-00-00 00:00:82
+84,santander,60,Bank/money,Nuwan Athukorala,0000-00-83,0000-00-00 00:00:83,0000-00-00 00:00:83
+85,morganstanley,60,Bank/money,Nuwan Athukorala,0000-00-84,0000-00-00 00:00:84,0000-00-00 00:00:84
+86,barclays,50,Bank/money,Nuwan Athukorala,0000-00-85,0000-00-00 00:00:85,0000-00-00 00:00:85
+87,hsbc,50,Bank/money,Nuwan Athukorala,0000-00-86,0000-00-00 00:00:86,0000-00-00 00:00:86
+88,scottrade,60,Bank/money,Nuwan Athukorala,0000-00-87,0000-00-00 00:00:87,0000-00-00 00:00:87
+89,ameritrade,60,Bank/money,Nuwan Athukorala,0000-00-88,0000-00-00 00:00:88,0000-00-00 00:00:88
+90,merilledge,60,Bank/money,Nuwan Athukorala,0000-00-89,0000-00-00 00:00:89,0000-00-00 00:00:89
+91,bank,15,Bank/money,Nuwan Athukorala,0000-00-90,0000-00-00 00:00:90,0000-00-00 00:00:90
+92,amazon,60,Ecommerce,Nuwan Athukorala,0000-00-91,0000-00-00 00:00:91,0000-00-00 00:00:91
+93,overstock,60,Ecommerce,Nuwan Athukorala,0000-00-92,0000-00-00 00:00:92,0000-00-00 00:00:92
+94,alibaba,60,Ecommerce,Nuwan Athukorala,0000-00-93,0000-00-00 00:00:93,0000-00-00 00:00:93
+95,aliexpress,60,Ecommerce,Nuwan Athukorala,0000-00-94,0000-00-00 00:00:94,0000-00-00 00:00:94
+96,leboncoin,70,Ecommerce,Nuwan Athukorala,0000-00-95,0000-00-00 00:00:95,0000-00-00 00:00:95
+97,netflix,70,Other,Nuwan Athukorala,0000-00-96,0000-00-00 00:00:96,0000-00-00 00:00:96
+98,skype,60,Other,Nuwan Athukorala,0000-00-97,0000-00-00 00:00:97,0000-00-00 00:00:97
+99,github,60,Other,Nuwan Athukorala,0000-00-98,0000-00-00 00:00:98,0000-00-00 00:00:98
+100,onedrive,60,Other,Nuwan Athukorala,0000-00-99,0000-00-00 00:00:99,0000-00-00 00:00:99
+101,dropbox,60,Other,Nuwan Athukorala,0000-00-100,0000-00-00 00:00:100,0000-00-00 00:00:100
+102,cgi,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-101,0000-00-00 00:00:101,0000-00-00 00:00:101
+103,.net,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-102,0000-00-00 00:00:102,0000-00-00 00:00:102
+104,.org,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-103,0000-00-00 00:00:103,0000-00-00 00:00:103
+105,.com,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-104,0000-00-00 00:00:104,0000-00-00 00:00:104
+106,.net.,20,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-105,0000-00-00 00:00:105,0000-00-00 00:00:105
+107,.org.,20,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-106,0000-00-00 00:00:106,0000-00-00 00:00:106
+108,.com.,20,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-107,0000-00-00 00:00:107,0000-00-00 00:00:107
+109,.gov,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-108,0000-00-00 00:00:108,0000-00-00 00:00:108
+110,.gov.,30,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-109,0000-00-00 00:00:109,0000-00-00 00:00:109
+111,.gouv,0,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-110,0000-00-00 00:00:110,0000-00-00 00:00:110
+112,.gouv.,40,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-111,0000-00-00 00:00:111,0000-00-00 00:00:111
+113,suivi,50,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-112,0000-00-00 00:00:112,0000-00-00 00:00:112
+114,laposte,50,Miscellaneous & SE tricks,Nuwan Athukorala,0000-00-113,0000-00-00 00:00:113,0000-00-00 00:00:113
+115,.ga,20,tlds,Nuwan Athukorala,0000-00-114,0000-00-00 00:00:114,0000-00-00 00:00:114
+116,.gq,20,tlds,Nuwan Athukorala,0000-00-115,0000-00-00 00:00:115,0000-00-00 00:00:115
+117,.ml,20,tlds,Nuwan Athukorala,0000-00-116,0000-00-00 00:00:116,0000-00-00 00:00:116
+118,.cf,20,tlds,Nuwan Athukorala,0000-00-117,0000-00-00 00:00:117,0000-00-00 00:00:117
+119,.tk,20,tlds,Nuwan Athukorala,0000-00-118,0000-00-00 00:00:118,0000-00-00 00:00:118
+120,.xyz,20,tlds,Nuwan Athukorala,0000-00-119,0000-00-00 00:00:119,0000-00-00 00:00:119
+121,.pw,20,tlds,Nuwan Athukorala,0000-00-120,0000-00-00 00:00:120,0000-00-00 00:00:120
+122,.cc,20,tlds,Nuwan Athukorala,0000-00-121,0000-00-00 00:00:121,0000-00-00 00:00:121
+123,.club,20,tlds,Nuwan Athukorala,0000-00-122,0000-00-00 00:00:122,0000-00-00 00:00:122
+124,.work,20,tlds,Nuwan Athukorala,0000-00-123,0000-00-00 00:00:123,0000-00-00 00:00:123
+125,.top,20,tlds,Nuwan Athukorala,0000-00-124,0000-00-00 00:00:124,0000-00-00 00:00:124
+126,.support,20,tlds,Nuwan Athukorala,0000-00-125,0000-00-00 00:00:125,0000-00-00 00:00:125
+127,.bank,20,tlds,Nuwan Athukorala,0000-00-126,0000-00-00 00:00:126,0000-00-00 00:00:126
+128,.info,20,tlds,Nuwan Athukorala,0000-00-127,0000-00-00 00:00:127,0000-00-00 00:00:127
+129,.study,20,tlds,Nuwan Athukorala,0000-00-128,0000-00-00 00:00:128,0000-00-00 00:00:128
+130,.click,20,tlds,Nuwan Athukorala,0000-00-129,0000-00-00 00:00:129,0000-00-00 00:00:129
+131,.country,20,tlds,Nuwan Athukorala,0000-00-130,0000-00-00 00:00:130,0000-00-00 00:00:130
+132,.stream,20,tlds,Nuwan Athukorala,0000-00-131,0000-00-00 00:00:131,0000-00-00 00:00:131
+133,.gdn,20,tlds,Nuwan Athukorala,0000-00-132,0000-00-00 00:00:132,0000-00-00 00:00:132
+134,.mom,20,tlds,Nuwan Athukorala,0000-00-133,0000-00-00 00:00:133,0000-00-00 00:00:133
+135,.xin,20,tlds,Nuwan Athukorala,0000-00-134,0000-00-00 00:00:134,0000-00-00 00:00:134
+136,.kim,20,tlds,Nuwan Athukorala,0000-00-135,0000-00-00 00:00:135,0000-00-00 00:00:135
+137,.men,20,tlds,Nuwan Athukorala,0000-00-136,0000-00-00 00:00:136,0000-00-00 00:00:136
+138,.loan,20,tlds,Nuwan Athukorala,0000-00-137,0000-00-00 00:00:137,0000-00-00 00:00:137
+139,.download,20,tlds,Nuwan Athukorala,0000-00-138,0000-00-00 00:00:138,0000-00-00 00:00:138
+140,.racing,20,tlds,Nuwan Athukorala,0000-00-139,0000-00-00 00:00:139,0000-00-00 00:00:139
+141,.online,20,tlds,Nuwan Athukorala,0000-00-140,0000-00-00 00:00:140,0000-00-00 00:00:140
+142,.center,20,tlds,Nuwan Athukorala,0000-00-141,0000-00-00 00:00:141,0000-00-00 00:00:141
+143,.ren,20,tlds,Nuwan Athukorala,0000-00-142,0000-00-00 00:00:142,0000-00-00 00:00:142
+144,.gb,20,tlds,Nuwan Athukorala,0000-00-143,0000-00-00 00:00:143,0000-00-00 00:00:143
+145,.win,20,tlds,Nuwan Athukorala,0000-00-144,0000-00-00 00:00:144,0000-00-00 00:00:144
+146,.review,20,tlds,Nuwan Athukorala,0000-00-145,0000-00-00 00:00:145,0000-00-00 00:00:145
+147,.vip,20,tlds,Nuwan Athukorala,0000-00-146,0000-00-00 00:00:146,0000-00-00 00:00:146
+148,.party,20,tlds,Nuwan Athukorala,0000-00-147,0000-00-00 00:00:147,0000-00-00 00:00:147
+149,.tech,20,tlds,Nuwan Athukorala,0000-00-148,0000-00-00 00:00:148,0000-00-00 00:00:148
+150,.science,20,tlds,Nuwan Athukorala,0000-00-149,0000-00-00 00:00:149,0000-00-00 00:00:149
+151,.business,20,tlds,Nuwan Athukorala,0000-00-150,0000-00-00 00:00:150,0000-00-00 00:00:150
