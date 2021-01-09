@@ -4,17 +4,58 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\suspicious_tbl;
+use App\Models\find_data_tbl;
 use DB;
 
 class UrlController extends Controller
 {
-    public function result(Request $request)
+    public function welcome()
+    {
+        $get_data = find_data_tbl::orderBy('id', 'desc')->paginate(10);
+
+        return view('welcome')->with('get_data', $get_data);
+    }
+    public function find_url(Request $request)
     {
         $main_url = $request->url;
         
-        echo $main_url;
+        // check phish API
+        $fields_string = http_build_query(array(
+            "apiKey"=> "7j4t43c4o6o0f2cecx2xhwl4ovlupfipqdkcljxwj0wws1nlaeearzhy1wdz1smx", 
+            "jobID" =>"eb595201-ffaf-4da3-a8fb-cfae4822cd7c", "insights"=>true,
+            "urlInfo"=> array("url"=>$main_url )));
+            $ch = curl_init();
+            curl_setopt($ch,CURLOPT_URL, 'https://developers.checkphish.ai/api/neo/scan/status');
+            curl_setopt($ch,CURLOPT_POST, true);
+            curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 0); 
+            curl_setopt($ch, CURLOPT_TIMEOUT, 1000); 
+            curl_setopt($ch,CURLOPT_RETURNTRANSFER, true); 
+            $result = curl_exec($ch);
+            if($result === false){
+                echo 'Curl error: ' . curl_error($ch);
+            }
+            
+             
+            $result = curl_exec($ch);
+            
+                  $result=json_decode($result,true);
+                  $disposition = $result['disposition'];
+
+                  if ($disposition != "clean") 
+                  {
+                      $check_phish_api = 65;
+                  }
+                  else
+                  {
+                    $check_phish_api = 0;
+                  }
+            // print '<pre>';
+            // print_r($result);
+            // print '</pre>';
 
 
+        // google API
         $url = $request->url;
         $apiKey = 'AIzaSyAG40isb8o8Y5Bb6uBTkdYys-VzBuB1mX8';
 
@@ -46,13 +87,16 @@ class UrlController extends Controller
         // print '</pre>';
             // dd("No issues found");
             // return redirect('/')->with('success', 'No issues found');
+            $google_score = 0;
         }
         else
         {
-            $mal_val = $obj['matches'][0]['threatType'];
-            dd($mal_val);
-        $score = 0;
+            $google_score = 65;
+        }
+        
         $suspicious_tbl_data = DB::select('select * from suspicious_tbls');
+
+        $score = $google_score + $check_phish_api;
 
         $https = strpos($main_url, 'https://');
         $http = strpos($main_url, 'http://');
@@ -110,7 +154,7 @@ class UrlController extends Controller
                 {
                     $score += $path_count_slx * 3;
                 }
-                dd($score);
+                
                 
             }
             if ($path != null  && $host == null) 
@@ -171,13 +215,13 @@ class UrlController extends Controller
 
             $score += $suspicious_tbl_data;
                 
-                $path_count_dts = substr_count($values['host'], ".");
+                $path_count_dts = substr_count($values['path'], ".");
 
                 if ($path_count_dts >= 3) 
                 {
                     $score += $path_count_dts * 3;
                 }
-                $path_count_slx = substr_count($values['host'], "-");
+                $path_count_slx = substr_count($values['path'], "-");
 
                 if ($path_count_slx >= 4) 
                 {
@@ -186,21 +230,134 @@ class UrlController extends Controller
            
         }
 
+            if ($score >= 100) 
+            {
+                $message = "MALICIOUS";
+            }
+            elseif ($score >= 90) 
+            {
+                $message = "SUSPICIOUS";
+            }
+            elseif ($score >= 80) 
+            {
+                $message = "LIKELY";
+            }
+            elseif ($score >= 65) 
+            {
+                $message = "POTENTIAL";
+            }
+            else
+            {
+                $message = "BENIGN";
+            }
 
+            
 
-        }
-
-
-     
         // $values = parse_url($main_url);
         $host_val = str_replace("https://", "", $main_url);
         
         $host_ip = gethostbyname($host_val);
-        dd($host_ip);
 
-        dd($score);
+        $https = strpos($main_url, 'https://');
+        $http = strpos($main_url, 'http://');
 
+        if ($https === false || $http === false) 
+        {
+            $scheme_val = false;
+        }
+        if ($https === 0 || $http === 0)
+        {
+            $scheme_val = true;
+        }
 
+        if ($scheme_val == true) 
+        {
+            $values = parse_url($main_url);
+            
+            $scheme = $values['scheme'];
+            
+            if (!isset($values['path']))
+            {
+                $path = null;
+            }
+            else
+            {
+                $path = $values['path'];
+                $path = str_replace("https://", "", $path);
+            }
+            if (!isset($values['host'])) 
+            {
+                $host = null;
+            }
+            else
+            {
+                $host = $values['host'];
+                $host = str_replace("https://", "", $host);
+                $host_ip = strstr($host_ip, '/', true);
+            }
+
+            if ($host == null && $path != null) 
+            {
+                $host_ip = $values['path'];
+                $host_ip = str_replace("https://", "", $host_ip);
+                $host_ip = strstr($host_ip, '/', true);
+            }
+            if ($host != null && $path == null) 
+            {
+                $host_ip = $values['host'];
+                $host_ip = str_replace("https://", "", $host_ip);
+                $host_ip = strstr($host_ip, '/', true);
+            }
+        }
+        else
+        {
+            $values = parse_url($main_url);
+            $host_ip = $values['path'];
+            $host_ip = str_replace("https://", "", $host_ip);
+            $host_ip = strstr($host_ip, '/', true);
+            // $ip = gethostbyname($host_ip);
+
+        }
+
+        $ips = gethostbyname($host_ip);
+
+        if ($ips == $host_ip) 
+        {
+            $ip_messege = "--";
+        }
+        else
+        {
+            $ip_messege = $ips;
+            $link = 'http://ip-api.com/json/'.$ip_messege;
+            $response = file_get_contents($link);
+            $response=json_decode($response,true);
+
+        }
+
+        if (isset($response['country']))
+            { 
+                $country = $response['country'];
+            }
+            else
+            {
+                $country = "--";
+            }
+
+        
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $datetime = date('Y-m-d H:i:s');
+
+        $find_data_tbl = new find_data_tbl();
+        $find_data_tbl->url = $main_url;
+        $find_data_tbl->ip_address = $ip_messege;
+        $find_data_tbl->Reputation = $message;
+        $find_data_tbl->country = $country;
+        $find_data_tbl->user_ip = $ip;
+        $find_data_tbl->datetime = $datetime;
+        $find_data_tbl->save();
+
+    
+        return response()->json(['message'=>$message, 'score'=>$score, 'url'=> $main_url, 'host_ip'=>$ip_messege, 'host'=>$response]);
 
 
 

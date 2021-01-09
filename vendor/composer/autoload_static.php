@@ -539,6 +539,7 @@ class ComposerStaticInit8c6f5a76a87509196c307f92a23f08bb
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\find_data_tbl' => __DIR__ . '/../..' . '/app/Models/find_data_tbl.php',
         'App\\Models\\suspicious_tbl' => __DIR__ . '/../..' . '/app/Models/suspicious_tbl.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
