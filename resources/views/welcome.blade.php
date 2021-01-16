@@ -85,6 +85,9 @@
     text-decoration:none;
     
     }
+    .colorchange{
+        backgrond-color:orange;
+    }
   
         </style>
     </head>
@@ -96,11 +99,11 @@
 
                    </div>
                     <div class="col-md-7 searchbar">
-                        <input class="search_input" type="text" name="url" id="url" placeholder="SEARCH FOR A URL">
+                        <input class="search_input" type="text" name="url" id="url" placeholder="Click here to scan your URL">
                         <button type="button" id="search_btn" style="background-color: transparent;border: none;" class="search_icon"><i class="fas fa-search"></i></button>
 
                         <br>
-                        <h1 style="color: #fff;margin-top: 20px;font-family: Arial, Helvetica, sans-serif;">Make it securly</h1>
+                        <h2 style="color: #fff;margin-top: 18px;font-family: Arial, Helvetica, sans-serif;">AND MAKE IT SECURELY</h2>
                         
                         
 
@@ -164,7 +167,7 @@
                       <div class="card mt-3" style="background-color: transparent;width: 120%">
                         <p style="font-weight: bold;"></p>
                         <center>
-                          <h1 style="color: #fff;margin-top: 20px;font-family: Arial, Helvetica, sans-serif;">FREQUENTLY USED LINKS</h1>
+                          <h1 style="color: #fff;margin-top: 20px;font-family: Arial, Helvetica, sans-serif;">FREQUENTLY SCANNED URLs</h1>
                         </center>
                        
                         <div class="card-body">
@@ -183,14 +186,17 @@
                                 <td>{{$data->url}}</td>
                                 <td><center>{{$data->ip_address}}</center> </td>
                                 <td><center>
-                                  @if ($data->Reputation == "BENIGN" || $data->Reputation == "POTENTIAL")
+                                  @if ($data->Reputation == "BENIGN")
                                   <button class="btn btn-success" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
+							  
+								  	        @elseif($data->Reputation == "POTENTIAL")
+                                  <button class="btn btn-warning" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
 
                                   @elseif($data->Reputation == "LIKELY")
-                                  <button class="btn btn-danger" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
+                                  <button class="btn btn-warning" id="result_btn" style="border-radius: 24px!important;background-color:orange"><i id="main_result_val">{{$data->Reputation}}</i></button>
 
                                   @elseif($data->Reputation == "SUSPICIOUS")
-                                  <button class="btn btn-warning" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
+                                  <button class="btn btn-danger" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
 
                                   @elseif($data->Reputation == "MALICIOUS")
                                   <button class="btn btn-danger" id="result_btn" style="border-radius: 24px!important;"><i id="main_result_val">{{$data->Reputation}}</i></button>
@@ -237,7 +243,7 @@
                 $('#main_card_summmery').hide();
                 $('#main_card').hide();
                 $('#loading_img').show();
-                
+                $('#result_btn').removeClass();
                 
                 $('#main_result_val').val('');
                 $('#source_url').val('');
@@ -256,25 +262,27 @@
                 {
                     var host_ip = data.host_ip;
                     console.log(data.ss);
-                   
-                    var score = data.score;
 
-                    if (score <= 65) 
+                    var score = data.score;
+                    var message = data.message;
+
+                    if (message == "BENIGN") 
                     {
-                        $('#result_btn').addClass("btn-success");
+                        $('#result_btn').addClass("btn btn-success");
                     }
-                    else if (score <= 80) 
+                    else if (message == "POTENTIAL") 
                     {
-                        $('#main_result_val').addClass("btn-danger");
+                        $('#result_btn').addClass("btn btn-warning");
                     }
-                    else if (score <= 90) 
+                    else if (message == "LIKELY") 
                     {
-                        $('#main_result_val').addClass("btn-warning");
+                        $('#result_btn').addClass("btn btn-warning colorchange");
                     }
-                    else if (score > 90) 
+                    else if (message == "SUSPICIOUS" ||message == "MALICIOUS" ) 
                     {
-                        $('#main_result_val').addClass("btn-danger");
+                        $('#result_btn').addClass("btn btn-danger");
                     }
+                    
                     $('#loading_img').hide();
                     $('#main_result_val').text(data.message);
                     $('#source_url').val(data.url);

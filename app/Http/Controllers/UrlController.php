@@ -15,6 +15,11 @@ class UrlController extends Controller
 
         return view('welcome')->with('get_data', $get_data);
     }
+
+    public function access_denied()
+    {
+        return view('access_denied');
+    }
     public function find_url(Request $request)
     {
         $main_url = $request->url;
@@ -293,20 +298,20 @@ class UrlController extends Controller
             {
                 $host = $values['host'];
                 $host = str_replace("https://", "", $host);
-                $host_ip = strstr($host_ip, '/', true);
+                // $host_ip = strstr($host_ip, '/', true);
             }
 
             if ($host == null && $path != null) 
             {
                 $host_ip = $values['path'];
                 $host_ip = str_replace("https://", "", $host_ip);
-                $host_ip = strstr($host_ip, '/', true);
+                // $host_ip = strstr($host_ip, '/', true);
             }
             if ($host != null && $path == null) 
             {
                 $host_ip = $values['host'];
                 $host_ip = str_replace("https://", "", $host_ip);
-                $host_ip = strstr($host_ip, '/', true);
+                // $host_ip = strstr($host_ip, '/', true);
             }
         }
         else
@@ -314,7 +319,7 @@ class UrlController extends Controller
             $values = parse_url($main_url);
             $host_ip = $values['path'];
             $host_ip = str_replace("https://", "", $host_ip);
-            $host_ip = strstr($host_ip, '/', true);
+            // $host_ip = strstr($host_ip, '/', true);
             // $ip = gethostbyname($host_ip);
 
         }
@@ -343,9 +348,19 @@ class UrlController extends Controller
                 $country = "--";
             }
 
-        
+            
         $ip = $_SERVER['REMOTE_ADDR'];
         $datetime = date('Y-m-d H:i:s');
+        
+
+        if ($message == "MALICIOUS") 
+        {
+            $loopback_ip = "127.0.0.1";
+            $sub_domain = $loopback_ip."    ".$main_url;
+            // $sub_domain = "127.0.0.1   hnbaportal";
+            $append = file_put_contents('C:\Windows\System32\drivers\etc\hosts', $sub_domain.PHP_EOL , FILE_APPEND | LOCK_EX);
+        }
+        
 
         $find_data_tbl = new find_data_tbl();
         $find_data_tbl->url = $main_url;

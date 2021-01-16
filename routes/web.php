@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\UrlController::class, 'welcome'])->name('welcome');
+Route::get('/access_denied', [App\Http\Controllers\UrlController::class, 'access_denied'])->name('access_denied');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/find_url', [App\Http\Controllers\UrlController::class, 'find_url'])->name('find_url');
