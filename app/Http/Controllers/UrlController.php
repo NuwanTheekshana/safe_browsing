@@ -355,8 +355,10 @@ class UrlController extends Controller
 
         if ($message == "MALICIOUS") 
         {
+            $host_val = str_replace("https://", "", $main_url);
+            $host_val = str_replace("http://", "", $main_url);
             $loopback_ip = "127.0.0.1";
-            $sub_domain = $loopback_ip."    ".$main_url;
+            $sub_domain = $loopback_ip."    ".$host_val;
             // $sub_domain = "127.0.0.1   hnbaportal";
             $append = file_put_contents('C:\Windows\System32\drivers\etc\hosts', $sub_domain.PHP_EOL , FILE_APPEND | LOCK_EX);
         }
